@@ -28,6 +28,6 @@ void print_fibonacci(int n)
  */
 int main(void)
 {
-	print_fabonacci(50);
+	print_fibonacci(50);
 
 	return (0);
