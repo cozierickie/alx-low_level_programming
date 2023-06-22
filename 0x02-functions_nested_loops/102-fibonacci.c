@@ -6,20 +6,26 @@
  */
 void print_fibonacci(int n)
 {
-	int first = 1, second = 2, next, i;
+	int i;
 
-	printf("%d, %d", first, second);
+	unsigned long long int fib1 = 1, fib2 = 2, next;
 
-	for (i = 3; i <= n; i++)
+	if (n >= 1)
+		printf("%llu", fib1);
+	if (n >= 2)
+		printf(", %llu", fib2);
+
+	for (i = 3; i <= n, i++)
 	{
-		next = first + second;
-		printf(", %d", next);
-		first = second;
-		second = next;
+		next = fib1 + fib2;
+		printf(", %llu", next);
+		fib1 = fib2;
+		fib2 = next;
 	}
 
 	printf("\n");
 }
+
 
 /**
  * main - Entry point of the program
