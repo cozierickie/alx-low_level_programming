@@ -74,3 +74,7 @@ Note that in the following example we are casting an int[][] into an int*. This 
 Write a function that sets the value of a pointer to a char.
 
 Prototype: void set_string(char **s, char *to);
+
+9. My primary motivation for hacking was driven by intellectual curiosity and the allure of exploration. I am seeking assistance in creating a file that specifically holds the password required for the crackme2 executable. The desired file should consist of the precise password without any additional spaces or new lines. Utilizing tools such as ltrace, ldd, gdb, and objdump might be beneficial in achieving this objective. It may be necessary to install the openssl library to successfully run the crackme2 program, which can be done by executing the command: sudo apt install libssl-dev.
+
+Edit the source list sudo nano /etc/apt/sources.list to add the following line: deb http://security.ubuntu.com/ubuntu xenial-security main Then sudo apt update and sudo apt install libssl1.0.0
